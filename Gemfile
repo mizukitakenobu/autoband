@@ -45,4 +45,6 @@ group :development do
   gem 'spring'
 
   gem "dotenv-rails"
+  gem "pry-rails"
+  gem "jp_prefecture"
 end

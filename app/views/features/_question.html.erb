@@ -1,1 +1,4 @@
-<%= @val %>
+<%= form_tag("/q", :remote => true, :class => "qform") do %>
+  <%= render "features/questions/q" + qnum.to_s%>
+  <%= hidden_field_tag 'qnum', qnum %>
+<%end%>

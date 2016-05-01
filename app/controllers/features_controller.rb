@@ -4,8 +4,12 @@ class FeaturesController < ApplicationController
   # GET /features
   # GET /features.json
   def index
-    @val = "test"
-    @val = params[:answer] unless params[:answer].blank?
+    if params[:qnum].blank?
+      @qnum = 1
+    else
+      set_answer(params[:qnum])
+      @qnum = params[:qnum].to_i + 1
+    end
   end
 
   # GET /features/1
@@ -45,5 +49,19 @@ class FeaturesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def feature_params
       params.fetch(:feature, {})
+    end
+
+    def set_answer(qnum)
+      if qnum == "1"
+        session[:sex] = params[:commit]
+      elsif qnum == "2"
+        session[:age] = params[:age]
+      elsif qnum == "3"
+        session[:part] = params[:commit]
+      elsif qnum == "4"
+        session[:pref] = params[:pref]
+      elsif qnum == "5"
+        session[:major] = params[:major]
+      end
     end
 end
