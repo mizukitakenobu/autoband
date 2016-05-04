@@ -13,3 +13,59 @@
  *= require_tree .
  *= require_self
  */
+/* body
+*********************************/
+body {
+  font-family: 'Hiragino Sans', 'Verdana', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  margin: 0;
+  color: #232323;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.link{
+  
+}
+
+/* header
+*********************************/
+.header{
+  height: 70px;
+  background-color: #30373D;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.logo{
+  text-align:center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width : 736px) {
+  #menu {
+    display: block;
+  }
+  .slicknav_menu {
+    display: none;
+  }
+}
+
+
+/* footer
+*********************************/
+
+.footer{
+
+}
+
+.footer-innner{
+
+}
+
+.copyright{
+
+}
