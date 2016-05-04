@@ -1,9 +1,0 @@
-site:
-  title: "AUTOBAND"
-  url: "https://hogehoge.jp"
-  meta:
-    description: "バンドを始めるならAutoband。好みの音楽ジャンルやパートに合わせて、あなたにぴったりの仲間を探すことができます。現在、関東地区限定でベータ版稼働中。"
-    keywords: ["AUTOBAND", "autoband", "オートバンド", "おーとばんど", "バンド", "バンド仲間", "バンド 始める" ]
-    og:
-      image: "og-image.jpg"
-      type: "website"
