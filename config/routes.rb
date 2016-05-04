@@ -4,5 +4,4 @@ Rails.application.routes.draw do
   root 'lp#index'
   get "/q" => "features#index"
   post "/q" => "features#index"
-  
 end
