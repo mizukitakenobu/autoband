@@ -1,4 +1,4 @@
-class LpController < ApplicationController
+class TopController < ApplicationController
   def index
   end
 end
